@@ -6,9 +6,21 @@
   <default revision="cupcake"
            remote="korg" />
 
-  <project path="build" name="platform/build">
+  <remote  name="srw-github"
+           fetch="git://github.com/srwalter/" />
+
+  <project path="build" name="build-vogue" remote="srw-github" revision="vogue">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+
+  <project remote="srw-github" revision="master"
+           path="vendor/htc/libgps" name="libgps-vogue" />
+  <project remote="srw-github" revision="master"
+           path="vendor/htc/libaudio" name="libaudio-vogue" />
+  <project remote="srw-github" revision="master"
+           path="vendor/htc/liblights" name="liblights-vogue" />
+  <project remote="srw-github" revision="master"
+           path="vendor/htc/vogue" name="board-vogue" />
 
   <project path="kernel"
            name="kernel/common"
