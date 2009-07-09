@@ -8,11 +8,15 @@
 
   <remote  name="srw-github"
            fetch="git://github.com/srwalter/" />
+  <remote  name="vilord-github"
+           fetch="git://github.com/vilord/" />
 
   <project path="build" name="build-vogue" remote="srw-github" revision="vogue">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
+  <project remote="vilord-github" revision="master"
+           path="vendor/htc/libril" name="android-htc-ril" />
   <project remote="srw-github" revision="master"
            path="vendor/htc/libgps" name="libgps-vogue" />
   <project remote="srw-github" revision="master"
