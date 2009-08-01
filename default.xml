@@ -24,6 +24,8 @@
   <project remote="srw-github" revision="master"
            path="vendor/htc/liblights" name="liblights-vogue" />
   <project remote="srw-github" revision="master"
+           path="vendor/htc/libcamera" name="libcamera-vogue" />
+  <project remote="srw-github" revision="master"
            path="vendor/htc/vogue" name="board-vogue" />
 
   <project path="kernel"
