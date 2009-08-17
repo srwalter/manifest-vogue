@@ -13,6 +13,7 @@
 
   <project path="build" name="build-vogue" remote="srw-github" revision="vogue">
     <copyfile src="core/root.mk" dest="Makefile" />
+    <copyfile src="buildspec.mk" dest="buildspec.mk" />
   </project>
 
   <project remote="vilord-github" revision="master"
